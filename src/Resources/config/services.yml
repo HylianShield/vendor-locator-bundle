@@ -1,3 +1,6 @@
 services:
 
   hylianshield.file_locator.vendor:
+    class: Symfony\Component\Config\FileLocator
+    public: true
+    arguments: [~]
