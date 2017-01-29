@@ -21,14 +21,4 @@ class HylianShieldVendorLocatorBundle extends Bundle
     {
         $container->addCompilerPass(new LocatorPass());
     }
-
-    public function boot()
-    {
-        ddd(
-            $this
-                ->container
-                ->get('hylianshield.file_locator.vendor')
-                ->locate('hylianshield/vendor-locator-bundle')
-        );
-    }
 }
